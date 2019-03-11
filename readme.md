@@ -35,11 +35,11 @@ sleep:
 3. 將 main.s 編譯並以 qemu 模擬， `$ make clean`, `$ make`, `$ make qemu`
 開啟另一 Terminal 連線 `$ arm-none-eabi-gdb` ，再輸入 `target remote localhost:1234` 連接，輸入兩次的 `ctrl + x` 再輸入 `2`, 開啟 Register 以及指令，並且輸入 `si` 單步執行觀察。
 
-前幾步驟先將register初始，當執行 `push {r1, r2, r3}` 後，觀察 `0x200000fc` 、 `0x200000f8` 、 `0x200000f4` 可以發現分別對應r3, r2和r1
+前幾步驟先將register初始，當執行 `push {r1, r2, r3}` 後，觀察 `0x200000fc` 、 `0x200000f8` 、 `0x200000f4` 可以發現分別對應 `r3`, `r2` 和 `r1`
 
 ![](https://github.com/kentlincku/ESEmbedded_HW02/blob/master/push-1.png)
 
-在執行 `pop {r4, r5, r6}` 之後，r4, r5, r6分別對應r1, r2和r3
+在執行 `pop {r4, r5, r6}` 之後， `r4`, `r5`, `r6` 分別對應 `r1`, `r2` 和 `r3`
 
 ![](https://github.com/kentlincku/ESEmbedded_HW02/blob/master/pop.png)
 
