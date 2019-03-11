@@ -8,15 +8,6 @@ HW02 範例
 2. 設計測試程式 main.s ，在初始 register 後將 register 的值 push 到 sp 再 pop 到其他 register, 觀察過程變化
 main.s:
 ```assembly
-
-
-3. 設計測試程式 main.s ，從 _start 開始後依序執行 b 以及 bl 並且觀察其指令差異，
-目標比較 14 行的 `b	label01` 以及 22 行的 `bl	sleep` 執行時的變化。
-
-
-main.s:
-
-```assembly
 _start:
 	mov r0, sp
 	mov r1, #1
