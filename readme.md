@@ -6,6 +6,7 @@ HW02 範例
 1. 先將資料夾 gnu-mcu-eclipse-qemu 完整複製到 ESEmbedded_HW02 資料夾中
 
 2. 設計測試程式 main.s ，在初始 register 後將 register 的值 push 到 sp 再 pop 到其他 register, 觀察過程變化
+
 main.s:
 ```assembly
 _start:
